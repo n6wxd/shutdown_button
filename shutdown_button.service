@@ -1,6 +1,8 @@
 [Unit]
 Description=GPIO shutdown button
+DefaultDependencies=no
 After=network.target
+Before=final.target
 
 [Service]
 Type=simple
